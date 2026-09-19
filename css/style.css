@@ -1757,6 +1757,33 @@ button, input, textarea {
   gap: 3.5rem;
 }
 
+.contact-minimal-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.contact-minimal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 1.25rem;
+}
+
+.contact-card-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-card-link:hover .copy-btn {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+@media (max-width: 640px) {
+  .contact-minimal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .contact-info-list {
   display: flex;
   flex-direction: column;
