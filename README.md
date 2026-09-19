@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🌌 Gautam M
-### Software Developer • AI/ML Student • Universe & Cosmos Explorer
+### Aspiring Software Developer • AI/ML Student • Universe & Cosmos Explorer
 
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-gautam--m567.github.io%2Fportfolio-1cd66c?style=for-the-badge&logo=googlechrome&logoColor=black)](https://gautam-m567.github.io/portfolio/)
 [![Career Compass](https://img.shields.io/badge/Flagship_App-Career_Compass_🧭-38bdf8?style=for-the-badge&logo=compass&logoColor=white)](https://pathfinder-bot-hub.lovable.app/)
