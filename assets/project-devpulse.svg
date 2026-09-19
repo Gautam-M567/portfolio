@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="chart-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-grad)" rx="16" />
+  
+  <!-- Subtle Grid Pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="500" />
+    <line x1="150" y1="0" x2="150" y2="500" />
+    <line x1="250" y1="0" x2="250" y2="500" />
+    <line x1="350" y1="0" x2="350" y2="500" />
+    <line x1="450" y1="0" x2="450" y2="500" />
+    <line x1="550" y1="0" x2="550" y2="500" />
+    <line x1="650" y1="0" x2="650" y2="500" />
+    <line x1="750" y1="0" x2="750" y2="500" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+  </g>
+
+  <!-- Window Container Mockup -->
+  <rect x="60" y="50" width="680" height="400" rx="12" fill="#0b0f19" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Top bar -->
+  <rect x="60" y="50" width="680" height="42" rx="12" fill="#131b2e" />
+  <circle cx="85" cy="71" r="6" fill="#ef4444" />
+  <circle cx="105" cy="71" r="6" fill="#f59e0b" />
+  <circle cx="125" cy="71" r="6" fill="#10b981" />
+  <text x="400" y="76" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">DevPulse :: Velocity &amp; Analytics Dashboard</text>
+
+  <!-- Metric Cards -->
+  <g transform="translate(90, 115)">
+    <!-- Card 1 -->
+    <rect width="180" height="85" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="16" y="30" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="500">PR VELOCITY</text>
+    <text x="16" y="60" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="bold">3.4 hrs</text>
+    <text x="105" y="60" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="600">↓ 42%</text>
+
+    <!-- Card 2 -->
+    <rect x="210" width="180" height="85" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="226" y="30" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="500">COMMIT MOMENTUM</text>
+    <text x="226" y="60" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="bold">1,842</text>
+    <text x="315" y="60" fill="#6366f1" font-family="sans-serif" font-size="12" font-weight="600">↑ 18%</text>
+
+    <!-- Card 3 -->
+    <rect x="420" width="190" height="85" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="436" y="30" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="500">SYSTEM HEALTH</text>
+    <text x="436" y="60" fill="#38bdf8" font-family="sans-serif" font-size="22" font-weight="bold">99.98%</text>
+    <circle cx="585" cy="55" r="5" fill="#10b981" filter="url(#glow)" />
+  </g>
+
+  <!-- Main Chart Area -->
+  <g transform="translate(90, 220)">
+    <rect width="610" height="205" rx="8" fill="#131d31" stroke="#334155" stroke-width="1" />
+    <text x="20" y="32" fill="#e2e8f0" font-family="sans-serif" font-size="13" font-weight="600">Sprint Delivery Velocity (Last 30 Days)</text>
+
+    <!-- Chart Grid -->
+    <line x1="20" y1="70" x2="590" y2="70" stroke="#334155" stroke-dasharray="3 3" />
+    <line x1="20" y1="120" x2="590" y2="120" stroke="#334155" stroke-dasharray="3 3" />
+    <line x1="20" y1="170" x2="590" y2="170" stroke="#334155" />
+
+    <!-- Wave Graphic -->
+    <path d="M 30,150 Q 100,80 180,120 T 320,70 T 450,110 T 580,45 L 580,170 L 30,170 Z" fill="url(#chart-grad)" />
+    <path d="M 30,150 Q 100,80 180,120 T 320,70 T 450,110 T 580,45" fill="none" stroke="#38bdf8" stroke-width="3" filter="url(#glow)" />
+
+    <!-- Data points -->
+    <circle cx="180" cy="120" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="2" />
+    <circle cx="320" cy="70" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="2" />
+    <circle cx="450" cy="110" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="2" />
+    <circle cx="580" cy="45" r="5" fill="#6366f1" stroke="#ffffff" stroke-width="2" filter="url(#glow)" />
+  </g>
+</svg>

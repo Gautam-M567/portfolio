@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cc-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#111c38" />
+    </linearGradient>
+    <linearGradient id="cc-emerald-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1cd66c" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="cc-cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="cc-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#cc-bg-grad)" rx="16" />
+  
+  <!-- Subtle Compass Rose Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <circle cx="400" cy="250" r="220" fill="none" stroke-dasharray="4 6" />
+    <circle cx="400" cy="250" r="140" fill="none" />
+    <circle cx="400" cy="250" r="60" fill="none" />
+    <line x1="180" y1="250" x2="620" y2="250" />
+    <line x1="400" y1="50" x2="400" y2="450" />
+  </g>
+
+  <!-- Window Container Mockup -->
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Top bar -->
+  <rect x="50" y="40" width="700" height="44" rx="12" fill="#0f172a" />
+  <circle cx="75" cy="62" r="6" fill="#ef4444" />
+  <circle cx="95" cy="62" r="6" fill="#f59e0b" />
+  <circle cx="115" cy="62" r="6" fill="#10b981" />
+  <rect x="230" y="50" width="340" height="24" rx="6" fill="#1e293b" />
+  <text x="400" y="66" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">https://pathfinder-bot-hub.lovable.app</text>
+
+  <!-- App Header inside Mockup -->
+  <g transform="translate(80, 105)">
+    <!-- Compass Icon Badge -->
+    <rect width="42" height="42" rx="10" fill="rgba(28, 214, 108, 0.15)" stroke="#1cd66c" stroke-width="1.5" />
+    <text x="21" y="28" font-size="22" text-anchor="middle">🧭</text>
+    
+    <text x="56" y="22" fill="#ffffff" font-family="'Inter', sans-serif" font-size="20" font-weight="800">Career Compass</text>
+    <text x="56" y="38" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">AI-Powered Career Guidance, Roadmaps &amp; RIASEC Aptitude Engine</text>
+
+    <!-- Author Pill -->
+    <rect x="490" y="5" width="145" height="28" rx="14" fill="rgba(28, 214, 108, 0.12)" stroke="#1cd66c" stroke-width="1" />
+    <circle cx="504" cy="19" r="4" fill="#1cd66c" filter="url(#cc-glow)" />
+    <text x="514" y="24" fill="#1cd66c" font-family="'Inter', sans-serif" font-size="11" font-weight="700">BY GAUTAM M</text>
+  </g>
+
+  <!-- Feature Grid in Mockup -->
+  <g transform="translate(80, 170)">
+    <!-- Card 1: AI Career Counsellor -->
+    <rect width="195" height="120" rx="10" fill="#131d33" stroke="#1e293b" stroke-width="1" />
+    <rect x="14" y="14" width="30" height="30" rx="6" fill="rgba(56, 189, 248, 0.15)" />
+    <text x="29" y="34" font-size="16" text-anchor="middle">🤖</text>
+    <text x="52" y="32" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="700">AI Counsellor</text>
+    <text x="14" y="68" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Real-time personalized chat mentoring &amp; doubt clearing</text>
+    <rect x="14" y="92" width="85" height="18" rx="4" fill="rgba(56, 189, 248, 0.2)" />
+    <text x="56" y="104" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">LLM Powered</text>
+
+    <!-- Card 2: RIASEC & Holland Code Test -->
+    <rect x="215" width="195" height="120" rx="10" fill="#131d33" stroke="#1e293b" stroke-width="1" />
+    <rect x="229" y="14" width="30" height="30" rx="6" fill="rgba(168, 85, 247, 0.15)" />
+    <text x="244" y="34" font-size="16" text-anchor="middle">📊</text>
+    <text x="267" y="32" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="700">RIASEC Test</text>
+    <text x="229" y="68" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">30-question aptitude scoring &amp; downloadable PDF report</text>
+    <rect x="229" y="92" width="95" height="18" rx="4" fill="rgba(168, 85, 247, 0.2)" />
+    <text x="276" y="104" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Holland Code</text>
+
+    <!-- Card 3: Step-by-Step Roadmaps -->
+    <rect x="430" width="205" height="120" rx="10" fill="#131d33" stroke="#1cd66c" stroke-width="1.5" />
+    <rect x="444" y="14" width="30" height="30" rx="6" fill="rgba(28, 214, 108, 0.15)" />
+    <text x="459" y="34" font-size="16" text-anchor="middle">🗺️</text>
+    <text x="482" y="32" fill="#1cd66c" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Career Roadmaps</text>
+    <text x="444" y="68" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Class 10 to job: Tech, Medicine, AI/ML, Cloud &amp; Salaries</text>
+    <rect x="444" y="92" width="105" height="18" rx="4" fill="rgba(28, 214, 108, 0.2)" />
+    <text x="496" y="104" fill="#1cd66c" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Top Indian Institutes</text>
+  </g>
+
+  <!-- Bottom Interactive Bar -->
+  <g transform="translate(80, 310)">
+    <rect width="635" height="125" rx="10" fill="#0d1527" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="30" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Featured Career Pathways &amp; Salary Insights</text>
+    
+    <!-- Pathway Pills -->
+    <g transform="translate(20, 48)">
+      <rect width="135" height="55" rx="6" fill="#131d33" stroke="#334155" stroke-width="1" />
+      <text x="12" y="24" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Software Engineer</text>
+      <text x="12" y="42" fill="#1cd66c" font-family="'JetBrains Mono', monospace" font-size="10">₹6 - 40 LPA</text>
+    </g>
+    <g transform="translate(170, 48)">
+      <rect width="135" height="55" rx="6" fill="#131d33" stroke="#334155" stroke-width="1" />
+      <text x="12" y="24" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="600">AI / ML Engineer</text>
+      <text x="12" y="42" fill="#1cd66c" font-family="'JetBrains Mono', monospace" font-size="10">₹12 - 80 LPA</text>
+    </g>
+    <g transform="translate(320, 48)">
+      <rect width="135" height="55" rx="6" fill="#131d33" stroke="#334155" stroke-width="1" />
+      <text x="12" y="24" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Cybersecurity</text>
+      <text x="12" y="42" fill="#1cd66c" font-family="'JetBrains Mono', monospace" font-size="10">₹8 - 50 LPA</text>
+    </g>
+    <g transform="translate(470, 48)">
+      <rect width="145" height="55" rx="6" fill="#131d33" stroke="#334155" stroke-width="1" />
+      <text x="12" y="24" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Study Abroad Plan</text>
+      <text x="12" y="42" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">Scholarships &amp; Visas</text>
+    </g>
+  </g>
+</svg>

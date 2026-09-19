@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sphere-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#141d2f" />
+    </linearGradient>
+    <linearGradient id="purple-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#sphere-bg)" rx="16" />
+
+  <!-- Background decorative elements -->
+  <circle cx="700" cy="100" r="180" fill="#8b5cf6" opacity="0.08" filter="blur(40px)" />
+  <circle cx="100" cy="400" r="150" fill="#06b6d4" opacity="0.08" filter="blur(40px)" />
+
+  <g transform="translate(70, 50)">
+    <!-- Sidebar -->
+    <rect width="180" height="400" rx="10" fill="#111827" stroke="#1f2937" stroke-width="1" />
+    <text x="25" y="45" fill="#f3f4f6" font-family="sans-serif" font-size="14" font-weight="700">SphereUI v2.4</text>
+    <rect x="25" y="70" width="130" height="24" rx="6" fill="#374151" opacity="0.4" />
+    <text x="35" y="86" fill="#e5e7eb" font-family="sans-serif" font-size="11">Buttons &amp; Badges</text>
+    <text x="35" y="125" fill="#9ca3af" font-family="sans-serif" font-size="11">Modals &amp; Dialogs</text>
+    <text x="35" y="160" fill="#9ca3af" font-family="sans-serif" font-size="11">Data Tables</text>
+    <text x="35" y="195" fill="#9ca3af" font-family="sans-serif" font-size="11">Color Tokens</text>
+    <text x="35" y="230" fill="#9ca3af" font-family="sans-serif" font-size="11">Navigation Bars</text>
+
+    <!-- Component Showcase Grid -->
+    <rect x="210" width="450" height="400" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="235" y="45" fill="#f8fafc" font-family="sans-serif" font-size="15" font-weight="600">Button Variations &amp; Interactive States</text>
+    
+    <!-- Primary Button -->
+    <g transform="translate(235, 75)">
+      <rect width="120" height="38" rx="8" fill="url(#purple-cyan)" />
+      <text x="60" y="24" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">Primary Action</text>
+    </g>
+
+    <!-- Emerald Button -->
+    <g transform="translate(375, 75)">
+      <rect width="120" height="38" rx="8" fill="url(#emerald)" />
+      <text x="60" y="24" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">Success Glow</text>
+    </g>
+
+    <!-- Outline Button -->
+    <g transform="translate(515, 75)">
+      <rect width="120" height="38" rx="8" fill="none" stroke="#64748b" stroke-width="1.5" />
+      <text x="60" y="24" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="500" text-anchor="middle">Outline Variant</text>
+    </g>
+
+    <!-- Component Card Example -->
+    <g transform="translate(235, 140)">
+      <rect width="400" height="130" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <circle cx="45" cy="45" r="22" fill="#6366f1" />
+      <text x="45" y="50" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">UI</text>
+      <text x="85" y="40" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="600">Accessible Card Component</text>
+      <text x="85" y="60" fill="#94a3b8" font-family="sans-serif" font-size="11">WAI-ARIA compliant, full keyboard support, theme tokens.</text>
+      <rect x="85" y="80" width="65" height="22" rx="11" fill="#312e81" />
+      <text x="117" y="95" fill="#a5b4fc" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">React</text>
+      <rect x="160" y="80" width="85" height="22" rx="11" fill="#064e3b" />
+      <text x="202" y="95" fill="#6ee7b7" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">TypeScript</text>
+    </g>
+
+    <!-- Code Preview -->
+    <g transform="translate(235, 290)">
+      <rect width="400" height="85" rx="8" fill="#090d16" stroke="#1f293d" stroke-width="1" />
+      <text x="20" y="30" fill="#ec4899" font-family="monospace" font-size="11">&lt;SphereButton <tspan fill="#38bdf8">variant</tspan>=<tspan fill="#a7f3d0">"glow"</tspan> <tspan fill="#38bdf8">size</tspan>=<tspan fill="#a7f3d0">"lg"</tspan>&gt;</text>
+      <text x="40" y="52" fill="#f1f5f9" font-family="monospace" font-size="11">Deploy Production</text>
+      <text x="20" y="70" fill="#ec4899" font-family="monospace" font-size="11">&lt;/SphereButton&gt;</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cloud-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09101d" />
+      <stop offset="100%" stop-color="#111c35" />
+    </linearGradient>
+    <linearGradient id="cyan-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#cloud-bg)" rx="16" />
+
+  <!-- Flow Grid Canvas -->
+  <g opacity="0.15" stroke="#38bdf8" stroke-width="1">
+    <pattern id="dot-pattern" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#38bdf8" />
+    </pattern>
+    <rect width="800" height="500" fill="url(#dot-pattern)" />
+  </g>
+
+  <!-- Title Badge -->
+  <g transform="translate(60, 50)">
+    <rect width="210" height="34" rx="17" fill="#1e293b" stroke="#334155" />
+    <circle cx="18" cy="17" r="5" fill="#10b981" />
+    <text x="35" y="22" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="600">Pipeline: Ingestion &gt; ETL Active</text>
+  </g>
+
+  <!-- Flow Nodes & Connections -->
+  <!-- Connection 1 -->
+  <path d="M 180 230 C 230 230, 250 170, 310 170" fill="none" stroke="#06b6d4" stroke-width="3" stroke-dasharray="6 4" />
+  <!-- Connection 2 -->
+  <path d="M 180 230 C 230 230, 250 310, 310 310" fill="none" stroke="#3b82f6" stroke-width="3" />
+  <!-- Connection 3 -->
+  <path d="M 450 170 C 510 170, 530 230, 590 230" fill="none" stroke="#8b5cf6" stroke-width="3" />
+  <!-- Connection 4 -->
+  <path d="M 450 310 C 510 310, 530 230, 590 230" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-dasharray="6 4" />
+
+  <!-- Node 1: Webhook Trigger -->
+  <g transform="translate(70, 190)">
+    <rect width="130" height="80" rx="10" fill="#1e293b" stroke="#06b6d4" stroke-width="2" />
+    <text x="15" y="32" fill="#06b6d4" font-family="sans-serif" font-size="10" font-weight="700">TRIGGER</text>
+    <text x="15" y="52" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="600">API Webhook</text>
+    <text x="15" y="68" fill="#94a3b8" font-family="sans-serif" font-size="10">2.4k req/sec</text>
+  </g>
+
+  <!-- Node 2A: Transformer -->
+  <g transform="translate(310, 130)">
+    <rect width="140" height="80" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2" />
+    <text x="15" y="32" fill="#3b82f6" font-family="sans-serif" font-size="10" font-weight="700">FUNCTION</text>
+    <text x="15" y="52" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="600">Schema Validate</text>
+    <text x="15" y="68" fill="#10b981" font-family="sans-serif" font-size="10">Avg 4ms</text>
+  </g>
+
+  <!-- Node 2B: Filter Queue -->
+  <g transform="translate(310, 270)">
+    <rect width="140" height="80" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" />
+    <text x="15" y="32" fill="#8b5cf6" font-family="sans-serif" font-size="10" font-weight="700">QUEUE</text>
+    <text x="15" y="52" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="600">Redis Stream</text>
+    <text x="15" y="68" fill="#94a3b8" font-family="sans-serif" font-size="10">0 drop rate</text>
+  </g>
+
+  <!-- Node 3: Data Sink -->
+  <g transform="translate(590, 190)">
+    <rect width="140" height="80" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2" />
+    <text x="15" y="32" fill="#10b981" font-family="sans-serif" font-size="10" font-weight="700">DESTINATION</text>
+    <text x="15" y="52" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="600">PostgreSQL DB</text>
+    <text x="15" y="68" fill="#94a3b8" font-family="sans-serif" font-size="10">Batch synced</text>
+  </g>
+</svg>

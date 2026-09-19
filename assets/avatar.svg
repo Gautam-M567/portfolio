@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatar-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </linearGradient>
+    <linearGradient id="hair-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="hoodie-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="ring-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="avatar-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#6366f1" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Outer ambient glow ring -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#ring-glow)" stroke-width="4" opacity="0.85" filter="url(#avatar-shadow)" />
+  
+  <!-- Inner circular base -->
+  <circle cx="200" cy="200" r="175" fill="url(#avatar-bg)" />
+
+  <!-- Background code particle elements -->
+  <text x="75" y="120" fill="#38bdf8" opacity="0.35" font-family="monospace" font-size="18" font-weight="bold">&lt;/&gt;</text>
+  <text x="295" y="140" fill="#ec4899" opacity="0.35" font-family="monospace" font-size="16" font-weight="bold">{...}</text>
+  <text x="65" y="270" fill="#10b981" opacity="0.3" font-family="monospace" font-size="14">async</text>
+  <text x="290" y="260" fill="#f59e0b" opacity="0.35" font-family="monospace" font-size="14">=&gt; ✨</text>
+
+  <!-- Developer Silhouette / Character -->
+  <!-- Shoulders & Hoodie -->
+  <path d="M 110,360 C 110,290 145,260 200,260 C 255,260 290,290 290,360 Z" fill="url(#hoodie-grad)" stroke="#4338ca" stroke-width="2" />
+  <path d="M 175,260 L 200,310 L 225,260" fill="none" stroke="#6366f1" stroke-width="2.5" />
+
+  <!-- Neck -->
+  <rect x="182" y="225" width="36" height="42" rx="6" fill="#fed7aa" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="180" rx="55" ry="62" fill="#ffedd5" />
+
+  <!-- Modern Hair -->
+  <path d="M 145,180 C 140,120 180,105 200,105 C 235,105 258,125 255,175 C 248,150 220,135 190,140 C 165,145 152,165 145,180 Z" fill="url(#hair-grad)" />
+
+  <!-- Glasses -->
+  <rect x="160" y="168" width="32" height="22" rx="6" fill="none" stroke="#0ea5e9" stroke-width="3" />
+  <rect x="208" y="168" width="32" height="22" rx="6" fill="none" stroke="#0ea5e9" stroke-width="3" />
+  <line x1="192" y1="179" x2="208" y2="179" stroke="#0ea5e9" stroke-width="3" />
+  <line x1="145" y1="178" x2="160" y2="178" stroke="#0ea5e9" stroke-width="2" />
+  <line x1="240" y1="178" x2="255" y2="178" stroke="#0ea5e9" stroke-width="2" />
+
+  <!-- Eyes behind glasses -->
+  <circle cx="176" cy="179" r="3.5" fill="#0f172a" />
+  <circle cx="224" cy="179" r="3.5" fill="#0f172a" />
+  <!-- Glass reflection glint -->
+  <line x1="165" y1="173" x2="175" y2="183" stroke="#ffffff" stroke-width="1.5" opacity="0.6" />
+  <line x1="213" y1="173" x2="223" y2="183" stroke="#ffffff" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Friendly Smile -->
+  <path d="M 188,212 Q 200,222 212,212" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Neon headset -->
+  <path d="M 145,170 C 145,115 255,115 255,170" fill="none" stroke="#f43f5e" stroke-width="4" stroke-linecap="round" />
+  <rect x="138" y="165" width="10" height="22" rx="4" fill="#f43f5e" />
+  <rect x="252" y="165" width="10" height="22" rx="4" fill="#f43f5e" />
+</svg>
